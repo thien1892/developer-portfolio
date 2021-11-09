@@ -17,7 +17,9 @@
   --transition: 0.3s;
 }
 /* Variables end */
-
+body {
+  font-family: monospace !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -170,6 +172,13 @@ nav ul li {
   height: 11.25rem;
 }
 /* Skills section ends */
+
+.certificate-pic {
+  width: 100%;
+  height: 100%;
+
+}
+
 
 /* Projects section */
 .projects {
