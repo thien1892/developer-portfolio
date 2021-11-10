@@ -28,7 +28,6 @@
     />
     <title>Trần Văn Thiện | Machine Learning</title>
   </head>
-
   <body>
     <!-- Navbar -->
     <nav>
@@ -61,8 +60,7 @@
         <p class="bio-text">
           Tôi là Trần Văn Thiện, 30 tuổi, là bố của 1 bé gái xinh đẹp.
           Tôi là một con người tò mò, muốn hiểu rõ then máy của vấn đề hơn là
-          mặt nổi bên ngoài. Và đây là động lực đưa tôi đến với Machine Learning/ Deep Learning.
-          Bởi vì, tôi muốn biết xã hội 4.0 mà mọi người đang nói đến, cụ thể là gì và cần những kỹ năng gì?
+          mặt nổi bên ngoài. Đây là động lực đưa tôi đến với Machine Learning/ Deep Learning. Bởi vì, tôi muốn biết xã hội 4.0 mà mọi người đang nói đến, cụ thể là gì và cần những kỹ năng gì?
         </p>
       </div>
     </section>
@@ -71,15 +69,14 @@
     <section class="more-about">
       <h2>More About Me</h2>
         <ul>
-          Thông tin chung:
-              <li>Họ tên: Trần Văn Thiện</li>
-              <li>Mail: thien1892@gmail.com</li>
-              <li>Địa chỉ: Dương Nội, Hà Đông, Hà Nội</li>
-              <li>Kỹ năng: Python, Tensorflow, HTML basic</li>
-              <li>Chứng chỉ: Tensorflow Certificate của Google,
-                 Data Science và Data Analyst của DataCamp,
-                  Deep Learning của Coursera</li>
-              <li>Giải thưởng: Vinh danh trong dự án AIcovidVN</li>
+            <li>Họ tên: Trần Văn Thiện</li>
+            <li>Mail: thien1892@gmail.com</li>
+            <li>Địa chỉ: Dương Nội, Hà Đông, Hà Nội</li>
+            <li>Kỹ năng: Python, Tensorflow, HTML basic, CSS basic, Open-CV</li>
+            <li>Chứng chỉ: Tensorflow Certificate của Google,
+                Data Science và Data Analyst của DataCamp,
+                Deep Learning của Coursera</li>
+            <li>Giải thưởng: Vinh danh trong dự án AIcovidVN</li>
           </ul>
     </section>
 
@@ -134,7 +131,7 @@
 
 
 <!-- Certificate section -->
-<section class="projects" id="certificate">
+<section class="certificate" id="certificate">
   <h2 class="projects-title">Chứng chỉ của tôi</h2>
   <div class="projects-container">
     <div class="project-container project-card">
@@ -184,10 +181,10 @@
     <!-- Projects section -->
     <section class="projects" id="projects">
       <h2 class="projects-title">Một số dự án gần đây</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
+      <div class="projects-container" >
+        <div class="project-container project-card" style="height: 21rem;">
           <img
-            src="assets/images/aicovid.jpg"
+            src="assets/images/AicovidVN.jpg"
             alt="expense-tracker"
             loading="lazy"
             class="project-pic"
@@ -195,11 +192,11 @@
           <h3 class="project-title">AIcovidVN</h3>
           <p class="project-details">
             Dự án quy tụ các chuyên gia trên các lĩnh vực để chẩn đoán Covid-19 qua tiếng ho.
-            Giải pháp tôi đưa ra cho kết quả 90.43% (AUC) là 1 trong 7 dội được vinh danh!
+            Giải pháp tôi đưa ra cho kết quả 90.43% (AUC) là 1 trong 7 đội được vinh danh!
           </p>
           <a href="https://github.com/thien1892/Diagnose_Covid19_via_Coughs" target="_blank" class="project-link">Xem thêm</a>
         </div>
-        <div class="project-container project-card">
+        <div class="project-container project-card" style="height: 21rem;">
           <img
             src="assets/images/netflixClone.png"
             alt="netflic-clone"
@@ -213,7 +210,7 @@
           </p>
           <a href="#" target="_blank" class="project-link">Xem thêm</a>
         </div>
-        <div class="project-container project-card">
+        <div class="project-container project-card" style="height: 21rem;">
           <img
             src="assets/images/greenyEarth.png"
             alt="greeny-earth"
@@ -234,7 +231,7 @@
       <h2>Liên hệ với tôi</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/meqvbbpr" method="POST">
+          <form name="contact-form" action="https://formspree.io/f/meqvbbpr" method="POST">
             <div class="form-control">
               <label for="name">Họ tên</label>
               <input
@@ -274,7 +271,16 @@
               value="Submit"
               id="submit-btn"
               class="submit-btn"
+              onclick="submitForm()"
             />
+            <script>
+              function submitForm() {
+              var frm = document.getElementsByName('contact-form')[0];
+              frm.submit(); // Submit the form
+              frm.reset();  // Reset all form data
+              return false; // Prevent page refresh
+              }
+          </script>
           </form>
         </div>
       </div>
