@@ -18,6 +18,10 @@
 }
 /* Variables end */
 
+body {
+  font-family: monospace !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -203,6 +207,7 @@ nav ul li {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
+  height: 21rem;
 }
 
 .project-container p {
@@ -407,6 +412,7 @@ footer {
 
   .project-container {
     width: 20.875rem;
+    height: auto;
   }
 
   .contact-form-container {
@@ -426,6 +432,7 @@ footer {
 
   .project-container {
     width: 17.875rem;
+    height: auto;
   }
 
   .contact-form-container {
